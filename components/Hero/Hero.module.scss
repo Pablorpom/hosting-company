@@ -1,0 +1,57 @@
+@use "sass:map";
+@import '../../styles/palette.scss';
+@import '../../styles/figures.scss';
+
+.root{
+    color: map.get($text-palette, "primary");
+    max-width: 1215px;
+    margin: 0 auto;
+    display: flex;
+};
+
+.title{
+    color: map.get($text-palette, "main-title");
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 34px;
+    margin-top: 53px
+};
+
+.text{
+    color: map.get($text-palette, "info");
+    margin-bottom: 60px;
+    margin-right: 215px;
+    max-width: 60%;
+}
+
+.imageContainer{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 324px;
+        left: -23px;
+        @include triangle-left("secondary", 20px);
+    }
+    &::before{
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: 69px;
+        right: -21px;
+        @include triangle-right("secondary", 20px);
+    }
+    .triangle{
+        z-index: 1;
+        position: absolute;
+        top: 410px;
+        right: -31px;
+        @include triangle-right("secondary", 40px);
+    }
+}
+
+// .content{
+// }
+
+

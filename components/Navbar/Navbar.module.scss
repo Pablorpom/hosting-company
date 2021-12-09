@@ -1,0 +1,22 @@
+@use "sass:map";
+@import '../../styles/palette.scss';
+
+.root{
+    max-width: 1215px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 70px;
+    margin-top: 31px;
+    align-items: center;
+}
+
+.root a{
+    color: map.get($text-palette, "primary");
+    font-weight: bold;
+    margin-left: 55.19px;
+}
+
+.root p{
+    color: map.get($text-palette, "primary");
+    font-weight: bold;
+}

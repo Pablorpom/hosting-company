@@ -1,0 +1,23 @@
+@use "sass:map";
+@import 'colors.scss';
+
+$palette: (
+    "primary": $black,
+    "secondary": $red-door,
+);
+
+$text-palette: (
+    "primary": $black,
+    "secondary": $white,
+    "main-title": $carbon-fiber,
+    "secondary-title": $river-styx,
+    "info": $grey,
+);
+
+@mixin use-palette($color){
+    color: map.get($palette, $color);
+};
+
+@mixin use-text-palette($color){
+    color: map.get($text-palette, $color);
+};
