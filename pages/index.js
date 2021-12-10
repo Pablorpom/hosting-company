@@ -14,13 +14,18 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Hero
-        mainText="Premium Web Hosting for Your Website"
-        secondaryText="Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support."
-      >
-        <Button secondary href="#" className={styles.createAccountButton}>Create an Account</Button>
-        <Button href="#">Choose your plan</Button>
-      </Hero>
-      
+        slides={[
+          {
+            menuText:"hosting",
+            mainText:"Premium Web Hosting for Your Website",
+            secondaryText:"Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support.",
+            children: <>
+              <Button secondary href="#" className={styles.createAccountButton}>Create an Account</Button>
+              <Button href="#">Choose your plan</Button>
+            </>
+          }
+        ]}
+      />
     </div>
   )
 }

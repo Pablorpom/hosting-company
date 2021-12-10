@@ -7,9 +7,9 @@ export default function Hero(props) {
     return(
         <div className={styles.root}>
             <div className={styles.content}>
-                <h1 className={styles.title}>{props.mainText}</h1>
-                <p className={styles.text}>{props.secondaryText}</p>
-                {props.children}
+                <h1 className={styles.title}>{props.slides[0].mainText}</h1>
+                <p className={styles.text}>{props.slides[0].secondaryText}</p>
+                {props.slides[0].children}
             </div>
             <div className={styles.imageContainer}>
                 <Image src={image} alt="woman in a computer"></Image>
@@ -20,7 +20,12 @@ export default function Hero(props) {
 }
 
 Hero.propTypes = {
-    mainText: PropTypes.string,
-    secondaryText: PropTypes.string,
-    children: PropTypes.node
+    slides: PropTypes.arrayOf(
+        PropTypes.shape({
+            menuText: PropTypes.string.isRequired,
+            mainText: PropTypes.string.isRequired,
+            secondaryText: PropTypes.string,
+            children: PropTypes.node
+        })
+    )
 }
