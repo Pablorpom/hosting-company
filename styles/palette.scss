@@ -14,10 +14,10 @@ $text-palette: (
     "info": $grey,
 );
 
-@mixin use-palette($color){
+@mixin use-palette($color) {
     color: map.get($palette, $color);
 };
 
-@mixin use-text-palette($color){
+@mixin use-text-palette($color) {
     color: map.get($text-palette, $color);
 };
