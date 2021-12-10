@@ -1,22 +1,81 @@
 @use "sass:map";
 @import '../../styles/palette.scss';
 
-.root{
+.root {
     max-width: 1215px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 70px;
     margin-top: 31px;
     align-items: center;
-}
-
-.root a{
-    color: map.get($text-palette, "primary");
-    font-weight: bold;
-    margin-left: 55.19px;
-}
-
-.root p{
-    color: map.get($text-palette, "primary");
-    font-weight: bold;
+    a {
+        color: map.get($text-palette, "primary");
+        font-weight: 600;
+    }
+    p {
+        color: map.get($text-palette, "primary");
+        font-weight: bold;
+    }
+    .iconContainer {
+        width: 13%;
+        align-items: center;
+    }
+    .primaryLinkContainer {
+        width: 19%;
+        display: flex;
+        align-items: center;
+    }
+    .secondaryLinksContainer {
+        width: 22%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .tertiaryLinkContainer {
+        width: 26%;
+        text-align: right;
+        padding-right: 60px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 2px;
+            right: 25px;
+            background-color: #DAD8D8;
+        }
+    }
+    .phoneContainer {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        .phoneLink {
+            display: flex;
+            span{
+                margin-right: 10px !important;
+            }
+        }
+        
+    }
+    .linkUnderline {
+        position: relative;
+        &::before {
+            content: '';
+            z-index: 1;
+            position: absolute;
+            background-color: map.get($palette, "secondary");
+            width: 0%;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s, width 0.3s;
+        }
+        &:hover {
+            &::before {
+                opacity: 1;
+                width: 80%;
+            }
+        }
+    }
 }
