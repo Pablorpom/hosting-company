@@ -2,7 +2,10 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import Navbar from '../components/navbar/Navbar';
 import Hero from '../components/Hero/Hero';
-import data from '../data/slidesData'
+import HeroData from '../data/slidesData'
+import WhyUs from '../components/WhyUs/WhyUs';
+import WhyUsLogoData from '../data/whyUsLogosData'
+import WhyUsProsSection from '../data/WhyUsProsSection'
 
 
 export default function Home() {
@@ -15,8 +18,9 @@ export default function Home() {
       </Head>
       <Navbar/>
       <Hero
-        slides={data}
+        slides={HeroData}
       />
+      <WhyUs logos={WhyUsLogoData} prosSection={WhyUsProsSection}/>
     </div>
   )
 }
