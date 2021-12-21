@@ -1,8 +1,9 @@
 @use "sass:map";
 @import '../../styles/palette.scss';
+@import '../../styles/responsive.scss';
 
 .root {
-    max-width: 1215px;
+    max-width: $large-max-width;
     margin: 0 auto;
     display: flex;
     margin-bottom: 70px;
