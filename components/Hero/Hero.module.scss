@@ -1,0 +1,13 @@
+@import '../../styles/responsive.scss';
+
+.root {
+    position: relative;
+    height: 627px;
+    max-width: $large-max-width;
+    margin: 0  auto;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+}
