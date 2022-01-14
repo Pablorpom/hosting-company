@@ -1,8 +1,11 @@
 @use 'sass:map';
 @import '../../styles/palette.scss';
+@import '../../styles/responsive.scss';
 
 .root {
     display: flex;
+    max-width: $large-max-width;
+    margin: 0 auto;
 }
 
 .pro {
@@ -10,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 55px;
+    margin-right: 50px;
     span {
         margin: 12px;
     }

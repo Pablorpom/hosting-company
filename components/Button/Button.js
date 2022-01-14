@@ -18,7 +18,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-    secondary: PropTypes.string,
+    secondary: PropTypes.bool,
     className: PropTypes.string,
     href: PropTypes.string,
     children: PropTypes.string,

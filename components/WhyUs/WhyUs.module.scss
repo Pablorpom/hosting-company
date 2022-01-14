@@ -1,16 +1,18 @@
 @use 'sass:map';
 @import '../../styles/palette.scss';
+@import '../../styles/responsive.scss';
 
 .root {
     display: flex;
+    max-width: $large-max-width;
+    margin: 0 auto;
 }
 
 .title {
     color: map.get($text-palette, 'main-title');
-    max-width: 50%;
-    min-width: 50%;
+    max-width: 60%;
+    min-width: 55%;
     h2 {
-        font-family: Inter;
         font-weight: 800;
         font-size: 48px;
         margin-bottom: 20px;
@@ -27,8 +29,8 @@
 
 .logos {
     display: grid;
-    grid-template-columns: repeat(3, 150px);
+    grid-template-columns: repeat(3, 130px);
     row-gap: 30px;
-    column-gap: 80px;
-    grid-template-rows: repeat(2, 100px);
+    column-gap: 100px;
+    grid-template-rows: repeat(2, 90px);
 }
