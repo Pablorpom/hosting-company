@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write"
+    "format": "prettier --write components data pages styles"
   },
   "dependencies": {
     "eslint-plugin-react": "^7.28.0",

@@ -1,4 +1,4 @@
-@use "sass:map";
+@use 'sass:map';
 @import '../../styles/palette.scss';
 
 .root {
@@ -21,7 +21,7 @@
 }
 
 .active {
-    color: map.get($palette, "secondary")
+    color: map.get($palette, 'secondary');
 }
 
 .indicatorContainer {
@@ -33,6 +33,6 @@
 .indicator {
     position: absolute;
     height: 1px;
-    background-color: map.get($palette, "secondary");
+    background-color: map.get($palette, 'secondary');
     transition: left 0.3s, width 0.3s;
 }

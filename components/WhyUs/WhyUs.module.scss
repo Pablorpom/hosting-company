@@ -1,4 +1,4 @@
-@use "sass:map";
+@use 'sass:map';
 @import '../../styles/palette.scss';
 
 .root {
@@ -6,7 +6,7 @@
 }
 
 .title {
-    color: map.get($text-palette, "main-title");
+    color: map.get($text-palette, 'main-title');
     max-width: 50%;
     min-width: 50%;
     h2 {
@@ -18,14 +18,14 @@
     p {
         font-family: Inter;
         font-weight: 400;
-        font-size: 18px; 
+        font-size: 18px;
         height: 224px;
         width: 523px;
         line-height: 32px;
     }
 }
 
-.logos{
+.logos {
     display: grid;
     grid-template-columns: repeat(3, 150px);
     row-gap: 30px;

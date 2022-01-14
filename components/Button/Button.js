@@ -1,4 +1,5 @@
-import styles from './Button.module.scss'
+import PropTypes from 'prop-types';
+import styles from './Button.module.scss';
 
 export default function Button(props) {
     // const conditionalStyle = ()=>{
@@ -8,8 +9,17 @@ export default function Button(props) {
     //         return styles.root
     //     }
     // }
-    const secondaryStyle = props.secondary ? styles.secondary : '' 
-    return(
-        <a className={`${styles.root} ${secondaryStyle} ${props.className}`} href={props.href}>{props.children}</a>
-    )
+    const secondaryStyle = props.secondary ? styles.secondary : '';
+    return (
+        <a className={`${styles.root} ${secondaryStyle} ${props.className}`} href={props.href}>
+            {props.children}
+        </a>
+    );
 }
+
+Button.propTypes = {
+    secondary: PropTypes.string,
+    className: PropTypes.string,
+    href: PropTypes.string,
+    children: PropTypes.string,
+};

@@ -3,9 +3,9 @@ import styles from './HeroSlide.module.scss';
 import PropTypes from 'prop-types';
 
 export default function HeroSlide(props) {
-    const hide = props.hide ? styles.hide : ''
-    const className = `${styles.root} ${hide} ${props.className || ''}`
-    return(
+    const hide = props.hide ? styles.hide : '';
+    const className = `${styles.root} ${hide} ${props.className || ''}`;
+    return (
         <div className={className}>
             <div className={styles.content}>
                 <h1 className={styles.title}>{props.mainText}</h1>
@@ -19,7 +19,7 @@ export default function HeroSlide(props) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export const shape = {
@@ -28,10 +28,10 @@ export const shape = {
     secondaryText: PropTypes.string,
     children: PropTypes.node,
     image: PropTypes.object,
-    imageAlt: PropTypes.string
-}
+    imageAlt: PropTypes.string,
+};
 
 HeroSlide.propTypes = {
     ...shape,
-    hide: PropTypes.bool
-}
+    hide: PropTypes.bool,
+};

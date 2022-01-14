@@ -5,7 +5,7 @@
     border-top: $size solid transparent;
     border-left: $size solid map.get($palette, $color);
     border-bottom: $size solid map.get($palette, $color);
-};
+}
 
 @mixin triangle-right($color, $size) {
     width: 0;
@@ -14,4 +14,4 @@
     border-top: $size solid transparent;
     border-right: $size solid map.get($palette, $color);
     border-bottom: $size solid map.get($palette, $color);
-};
+} ;

@@ -1,4 +1,4 @@
-@use "sass:map";
+@use 'sass:map';
 @import '../../styles/palette.scss';
 @import '../../styles/responsive.scss';
 
@@ -10,11 +10,11 @@
     margin-top: 31px;
     align-items: center;
     a {
-        color: map.get($text-palette, "primary");
+        color: map.get($text-palette, 'primary');
         font-weight: 600;
     }
     p {
-        color: map.get($text-palette, "primary");
+        color: map.get($text-palette, 'primary');
         font-weight: bold;
     }
     .iconContainer {
@@ -42,7 +42,7 @@
             height: 100%;
             width: 2px;
             right: 25px;
-            background-color: #DAD8D8;
+            background-color: #dad8d8;
         }
     }
     .phoneContainer {
@@ -51,11 +51,10 @@
         align-items: center;
         .phoneLink {
             display: flex;
-            span{
+            span {
                 margin-right: 10px !important;
             }
         }
-        
     }
     .linkUnderline {
         position: relative;
@@ -63,7 +62,7 @@
             content: '';
             z-index: 1;
             position: absolute;
-            background-color: map.get($palette, "secondary");
+            background-color: map.get($palette, 'secondary');
             width: 0%;
             height: 2px;
             bottom: -5px;
