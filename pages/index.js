@@ -5,6 +5,7 @@ import Hero from '../components/Hero/Hero';
 import HeroData from '../data/slidesData'
 import WhyUs from '../components/WhyUs/WhyUs';
 import WhyUsLogoData from '../data/whyUsLogosData'
+import WhyUsPros from '../components/WhyUs/WhyUsPros';
 import WhyUsProsSection from '../data/WhyUsProsSection'
 
 
@@ -21,6 +22,7 @@ export default function Home() {
         slides={HeroData}
       />
       <WhyUs logos={WhyUsLogoData} prosSection={WhyUsProsSection}/>
+      <WhyUsPros prosSection={WhyUsProsSection}/>
     </div>
   )
 }

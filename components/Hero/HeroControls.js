@@ -37,5 +37,6 @@ export default function HeroControls(props) {
 
 HeroControls.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape(shape)),
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    index: PropTypes.number
 }
