@@ -1,4 +1,4 @@
-import styles from './Pricing.module.scss';
+import styles from './PlansPricing.module.scss';
 import Switch from '../Switch/Switch';
 import { useState } from 'react';
 
