@@ -7,6 +7,7 @@ import WhyUs from '../components/WhyUs/WhyUs';
 import WhyUsLogoData from '../data/whyUsLogosData';
 import WhyUsPros from '../components/WhyUs/WhyUsPros';
 import WhyUsProsSection from '../data/WhyUsProsSection';
+import Pricing from '../components/Pricing/Pricing';
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
             <Hero slides={HeroData} />
             <WhyUs logos={WhyUsLogoData} prosSection={WhyUsProsSection} />
             <WhyUsPros prosSection={WhyUsProsSection} />
+            <Pricing />
         </div>
     );
 }
