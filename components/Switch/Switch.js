@@ -1,21 +1,13 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 import styles from './Switch.module.scss';
 
-export default function Switch() {
-    const [toggleSwitch, setToggleSwitch] = useState(true);
-    const onClick = () => {
-        if (toggleSwitch) {
-            setToggleSwitch(false);
-        } else {
-            setToggleSwitch(true);
-        }
-    };
-    const toggle = toggleSwitch === false ? styles.toggled : '';
+export default function Switch(props) {
+    const toggle = props.isOn === false ? styles.toggled : '';
     const className = `${styles.toggleSwitchCircle} ${toggle}`;
     return (
         <div className={styles.switchContainer}>
             <div className={styles.switchText}>Monthly</div>
-            <div className={styles.switch} onClick={onClick}>
+            <div className={styles.switch} onClick={props.onChange}>
                 <div className={className}></div>
             </div>
             <div className={styles.switchText}>Yearly</div>
@@ -23,3 +15,8 @@ export default function Switch() {
         </div>
     );
 }
+
+Switch.propTypes = {
+    isOn: PropTypes.bool,
+    onChange: PropTypes.func,
+};
