@@ -1,0 +1,55 @@
+const premiumpricingCarData = [
+    {
+        title: 'Premium',
+        description: 'With all your customers via all conversation channels in one central dashboard.',
+        price: 60.0,
+        priceType: 'Per month',
+        benefits: [
+            '2GB SSD',
+            '10GB Bandwidth',
+            '15 Email Accounts',
+            'Unlimited Database',
+            '4 Subdomains',
+            '1 Parked Domain',
+            '2 Websites',
+            'Free SSL',
+            'Softaculous',
+        ],
+    },
+    {
+        title: 'Premium',
+        description: 'with all your customers via all conversation channels in one central dashboard.',
+        price: 60.0,
+        priceType: 'Per month',
+        benefits: [
+            '2GB SSD',
+            '10GB Bandwidth',
+            '15 Email Accounts',
+            'Unlimited Database',
+            '4 Subdomains',
+            '1 Parked Domain',
+            '2 Websites',
+            'Free SSL',
+            'Softaculous',
+        ],
+    },
+    {
+        title: 'Premium',
+        description: 'with all your customers via all conversation channels in one central dashboard.',
+        price: 60.0,
+        priceType: 'Per month',
+        benefits: [
+            '2GB SSD',
+            '10GB Bandwidth',
+            '15 Email Accounts',
+            'Unlimited Database',
+            '4 Subdomains',
+            '1 Parked Domain',
+            '2 Websites',
+            'Free SSL',
+            'Softaculous',
+        ],
+    },
+];
+
+export default premiumpricingCarData;

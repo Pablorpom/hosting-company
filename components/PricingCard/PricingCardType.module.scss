@@ -1,0 +1,38 @@
+@use 'sass:map';
+@import '../../styles/palette.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 85px;
+}
+.textContainer {
+    display: flex;
+    justify-content: center;
+    :first-child {
+        margin-right: 332px;
+    }
+}
+.textContainer div {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.indicatorContainer {
+    position: relative;
+    width: 856px;
+    height: 4px;
+    background-color: #c4c4c4;
+}
+.indicator {
+    position: absolute;
+    width: 443px;
+    height: 4px;
+    left: 0px;
+    background: map.get($palette, 'secondary');
+    transition: left 0.3s;
+}
+.premium {
+    left: 443px;
+}
